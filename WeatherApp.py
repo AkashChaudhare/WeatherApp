@@ -26,7 +26,7 @@ def getWeather():
     clock.config(text=current_time)
     name.config(text="Current Weather")
 
-    key='707278337ac337e58423a08d2d3b1464'
+    key='SOME_KEY'
     #api=ffhttps://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
     api=f"https://api.openweathermap.org/data/2.5/weather?lat={location.latitude}&lon={location.longitude}&appid={key}"
@@ -64,13 +64,13 @@ textfield.focus()
 
 
 #Search button
-search_icon=PhotoImage(file=r"Tkinter_Weather_App\magnifying-glass.png")
+search_icon=PhotoImage(file=r"WeatherApp\magnifying-glass.png")
 search_icon_button=Button(image=search_icon,borderwidth=0,cursor="hand2",command=getWeather)
 search_icon_button.place(x=440,y=20)
 
 
 #Weather Logo
-w_logo=PhotoImage(file=r"Tkinter_Weather_App\cloudy.png")
+w_logo=PhotoImage(file=r"WeatherApp\cloudy.png")
 logo=Label(image=w_logo,background="white")
 logo.place(x=215,y=80)
 
